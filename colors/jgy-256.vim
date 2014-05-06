@@ -90,7 +90,10 @@ highlight rubySymbol                ctermfg=29
 "`rb include Foo
 
 " rubyKeyword (-> Keyword)
-"`rb callcc; caller; lambda {}; proc {}
+"`rb callcc
+"`rb caller
+"`rb lambda {}
+"`rb proc {}
 
 " rubyControl
 highlight rubyControl               ctermfg=34
