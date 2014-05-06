@@ -159,7 +159,7 @@ endfunction
 highlight Hidden                    ctermfg=bg      ctermbg=bg
 
 function! CodeSnippetsInsideVimFiles() abort
-  autocmd FileType vim call TextEnableCodeSnip('ruby', '\"`rb', '$', 'Hidden')
+  call TextEnableCodeSnip('ruby', '\"`rb', '$', 'Hidden')
 endfunction
 
 " Add snippet colouring to all .vim files
