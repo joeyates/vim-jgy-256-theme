@@ -47,6 +47,7 @@ highlight Type                      ctermfg=220
 
 " rubyStringDelimiter (-> Delimiter)
 "`rb ''
+"`rb "with #{interpolated} value"
 
 " rubyInteger (-> Number)
 "`rb 123
