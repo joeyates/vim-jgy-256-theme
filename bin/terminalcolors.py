@@ -15,7 +15,6 @@ def background(n):
 def out(n):
     background(n)
     system('echo -n "% 4d"' % n)
-    background(0)
 
 def table(start, end, width):
     def is_end_of_row(n):
