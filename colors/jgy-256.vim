@@ -29,14 +29,14 @@ highlight Comment                   ctermfg=243
 highlight Conditional               ctermfg=34
 highlight Constant                  ctermfg=43
 highlight Define                    ctermfg=247
-highlight Delimiter                 ctermfg=130
+highlight Delimiter                 ctermfg=37
 highlight Function                  ctermfg=39
 highlight Keyword                   ctermfg=2
 highlight Include                   ctermfg=130
 highlight PreProc                   ctermfg=166
-highlight String                    ctermfg=29
+highlight String                    ctermfg=35
 highlight Todo                      ctermfg=13      ctermbg=NONE
-highlight Type                      ctermfg=220
+highlight Type                      ctermfg=214
 " }}}
 " Ruby " {{{
 " Types
@@ -56,7 +56,7 @@ highlight Type                      ctermfg=220
 "`rb 1.23
 
 " rubySymbol
-highlight rubySymbol                ctermfg=29
+highlight rubySymbol                ctermfg=246
 "`rb :foo
 
 " Identifiers
