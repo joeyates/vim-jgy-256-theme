@@ -19,24 +19,31 @@ set t_Co=256
 
 " Editor " {{{
 " N.B. setting ctermbg for Normal updates the 'background' setting
-highlight Normal                                    ctermbg=234
+highlight Normal                    ctermfg=7       ctermbg=236
 highlight CursorLine     cterm=NONE                 ctermbg=235
 highlight ColorColumn                               ctermbg=235
 highlight Search                    ctermfg=233     ctermbg=172
+highlight Visual                    ctermfg=bg      ctermbg=fg
+
+" Popup menu
+highlight Pmenu                     ctermfg=234     ctermbg=12
+highlight PmenuSel                  ctermfg=fg      ctermbg=208
 " }}}
 " Global syntax " {{{
-highlight Comment                   ctermfg=243
+highlight Comment                   ctermfg=102
 highlight Conditional               ctermfg=34
-highlight Constant                  ctermfg=43
+highlight Constant                  ctermfg=37
 highlight Define                    ctermfg=247
 highlight Delimiter                 ctermfg=37
 highlight Function                  ctermfg=39
 highlight Keyword                   ctermfg=2
+highlight Identifier                ctermfg=38
 highlight Include                   ctermfg=130
 highlight PreProc                   ctermfg=166
+highlight Statement                 ctermfg=106
 highlight String                    ctermfg=35
-highlight Todo                      ctermfg=13      ctermbg=NONE
-highlight Type                      ctermfg=214
+highlight Todo                      ctermfg=169     ctermbg=NONE
+highlight Type                      ctermfg=178
 " }}}
 " Ruby " {{{
 " Types
@@ -56,7 +63,7 @@ highlight Type                      ctermfg=214
 "`rb 1.23
 
 " rubySymbol
-highlight rubySymbol                ctermfg=246
+highlight rubySymbol                ctermfg=97
 "`rb :foo
 
 " Identifiers
@@ -111,7 +118,8 @@ highlight rubyControl               ctermfg=34
 " rubyConditional (-> Conditional)
 "`rb if :foo; end
 
-" rubyDefine 'def' (-> Define)
+" rubyDefine 'def'
+highlight rubyDefine                ctermfg=145
 "`rb def foo; end
 
 " rubyClass 'class' (-> rubyDefine)
